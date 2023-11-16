@@ -40,3 +40,15 @@ h2 {
     margin: auto;
     padding:2px;
 }
+
+#my-projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    justify-content: space-around;
+    align-items: space-evenly;
+}
+
+#my-projects img {
+    width: 320px;
+}
