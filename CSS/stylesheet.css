@@ -27,6 +27,11 @@ header nav ul {
     flex-direction: row;
     align-items: flex-end;
     padding: 2%;
+    color: white;
+}
+
+header nav ul li a {
+    color: aliceblue;
 }
 
 h2 {
@@ -46,7 +51,6 @@ h2 {
     flex-wrap: wrap;
     padding: 3%;
     justify-content: space-around;
-    align-items: space-evenly;
 }
 
 #my-projects img {
