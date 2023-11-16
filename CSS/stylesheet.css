@@ -29,3 +29,14 @@ header nav ul {
     padding: 2%;
 }
 
+h2 {
+    font-size: 1.75em;
+    padding: 2px;
+}
+
+#about-me {
+    background-color: moccasin;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding:2px;
+}
