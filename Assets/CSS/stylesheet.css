@@ -31,6 +31,10 @@ header nav ul {
     color: white;
 }
 
+main {
+    background-color: black;
+}
+
 header nav ul li a {
     color: #3effec;
 }
@@ -40,22 +44,54 @@ h2 {
     padding: 2px;
 }
 
+#name {
+    font-family: 'brush script mt', cursive;
+    font-size: 2.5em;
+}
+
 #about-me {
-    background-color: moccasin;
+    background-color: #da00ff2e;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
     padding:2px;
+    color: #3effec;
+}
+
+#my-projects {
+    color: #3effec;
+}
+
+#my-projects h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: 5px;
+    font-family: 'brush script mt', cursive;
 }
 
 #my-projects ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#my-projects ul li {
     padding: 3%;
-    justify-content: space-around;
+    margin: 15px 0 15px 0;
+    border: solid;
+    border-color: #00ffe5;
+    border-width: medium;
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px 5px #da00ffab;
+}
+
+#my-projects ul li:hover {
+    border-color: rgb(139, 255, 243);
+    box-shadow: 0px 0px 25px 10px #da00ffab;
 }
 
 #my-projects img {
-    width: 320px;
+    width: 300px;
 }
 
 #contact {
