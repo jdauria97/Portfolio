@@ -1,0 +1,118 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(5, 7, 94);
+    color: #3effec;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header nav {
+    display: flex;
+    padding: .7em;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    color: white;
+}
+
+main {
+    background-color: black;
+}
+
+header nav ul li a {
+    color: #3effec;
+}
+
+h2 {
+    font-size: 1.75em;
+    padding: 2px;
+}
+
+#name {
+    font-family: 'brush script mt', cursive;
+    font-size: 2.5em;
+}
+
+#about-me {
+    background-color: #da00ff2e;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding:2px;
+    color: #3effec;
+}
+
+#my-projects {
+    color: #3effec;
+}
+
+#my-projects h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: 5px;
+    font-family: 'brush script mt', cursive;
+}
+
+#my-projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#my-projects ul li {
+    padding: 3%;
+    margin: 15px 0 15px 0;
+    border: solid;
+    border-color: #00ffe5;
+    border-width: medium;
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px 5px #da00ffab;
+}
+
+#my-projects ul li:hover {
+    border-color: rgb(139, 255, 243);
+    box-shadow: 0px 0px 25px 10px #da00ffab;
+}
+
+#my-projects img {
+    width: 300px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'brush script mt', cursive;
+    font-size: 2.5em;
+    padding: 1%;
+}
+
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.25em;
+    font-weight: bolder;
+    padding: 2%;
+}

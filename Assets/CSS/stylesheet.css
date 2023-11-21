@@ -1,64 +1,99 @@
+
+:root {
+    --darkpurple: #da00ff2e;
+    --electricblue: #00ffe5;
+    --activatedblue: rgb(139, 255, 243);
+    --purpleglow: #da00ffab;
+    --blueglow: #008174;
+    --lightpurple: #ff00ff;
+}
+
 * {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    box-sizing: border-box;
+    color: var(--lightpurple);
+}
+
+h1 {
+    font-size: 300%;
+    padding: 2% 0;
+}
+
+h2 {
+    font-size: 170%;
+    padding: 1% 2%;
+}
+
+h3 {
+    font-size: 150%;
+    padding: 3% 0;
+}
+
+p {
+    padding: 1em;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: rgb(5, 7, 94);
-    color: #3effec;
 }
 
-header h1 {
-    font-size: 2.5em;
+header > * {
+    max-width: 80%;
 }
 
 header nav {
+    border: solid 2px var(--electricblue);
+    margin: auto;
     display: flex;
-    padding: .7em;
-    margin-right: 10px;
-    font-size: 1.5em;
 }
 
 header nav ul {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 2%;
-    color: white;
+}
+
+header nav ul li {
+    display: flex;
+    padding: 5px;
+}
+
+header nav ul li a {
+    display: flex;
+}
+
+header nav ul li a:hover {
+    color: var(--activatedblue);
+}
+
+#name {
+    font-family: 'brush script mt', cursive;
+}
+
+.headshot {
+    max-width: 40%;
+    border: solid 2px var(--darkpurple);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px var(--blueglow);
+}
+
+#about-me {
+    background-color: var(--darkpurple);
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding:2px;
+    color: var(--electricblue);
 }
 
 main {
     background-color: black;
 }
 
-header nav ul li a {
-    color: #3effec;
-}
-
-h2 {
-    font-size: 1.75em;
-    padding: 2px;
-}
-
-#name {
-    font-family: 'brush script mt', cursive;
-    font-size: 2.5em;
-}
-
-#about-me {
-    background-color: #da00ff2e;
-    font-family: 'Courier New', Courier, monospace;
-    margin: auto;
-    padding:2px;
-    color: #3effec;
-}
-
 #my-projects {
-    color: #3effec;
+    color: var(--electricblue);
 }
 
 #my-projects h2 {
@@ -66,6 +101,32 @@ h2 {
     font-size: 3em;
     margin: 5px;
     font-family: 'brush script mt', cursive;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+}
+
+.featured img {
+    
+}
+
+.featured a {
+    display: flex;
+    padding: 3%;
+    margin: 15px 0 15px 0;
+    border: solid;
+    border-color: var(--darkpurple);
+    border-width: medium;
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px 5px var(--blueglow);
+}
+
+.featured a:hover {
+    border-color: var(--lightpurple);
+    box-shadow: 0px 0px 25px 10px var(--electricblue);
 }
 
 #my-projects ul {
@@ -78,16 +139,16 @@ h2 {
     padding: 3%;
     margin: 15px 0 15px 0;
     border: solid;
-    border-color: #00ffe5;
+    border-color: var(--electricblue);
     border-width: medium;
     border-radius: 15px;
     background-color: #000000;
-    box-shadow: 0px 0px 15px 5px #da00ffab;
+    box-shadow: 0px 0px 15px 5px var(--purpleglow);
 }
 
 #my-projects ul li:hover {
-    border-color: rgb(139, 255, 243);
-    box-shadow: 0px 0px 25px 10px #da00ffab;
+    border-color: var(--activatedblue);
+    box-shadow: 0px 0px 25px 10px var(--purpleglow);
 }
 
 #my-projects img {
@@ -97,7 +158,7 @@ h2 {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: cornflowerblue;
+    background-color: var(--darkpurple)
 }
 
 #contact h2 {
@@ -117,3 +178,15 @@ h2 {
     font-weight: bolder;
     padding: 2%;
 }
+
+#contact ul li {
+    padding: 2%;
+}
+
+#contact ul li a:hover {
+    border-color: var(--activatedblue);
+    box-shadow: 0px 0px 25px 10px var(--purpleglow);
+    border: solid medium var(--activatedblue);
+    border-radius: 2px;
+}
+
