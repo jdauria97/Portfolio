@@ -10,7 +10,7 @@
 
 - All code was written from scratch.
 
--Page and its contents are works in progress and subject to updates and changes.
+- Page and its contents are works in progress and subject to updates and changes.
 
 ## Mock Up
 
