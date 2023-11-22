@@ -1,4 +1,4 @@
-
+/* establishes preset color variables */
 :root {
     --darkpurple: #da00ff2e;
     --electricblue: #00ffe5;
@@ -7,13 +7,13 @@
     --blueglow: #008174;
     --lightpurple: #ff00ff;
 }
-
+/* global styles */
 * {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: var(--lightpurple);
 }
-
+/* heading styles */
 h1 {
     font-size: 350%;
     padding: 2% 0;
@@ -28,11 +28,11 @@ h3 {
     font-size: 150%;
     padding: 3% 0;
 }
-
+/* text styling */
 p {
     padding: 1em;
 }
-
+/* styles the header content */
 header {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ header {
     padding: 10px;
     background-color: rgb(5, 7, 94);
 }
-
+/* styles the navigation bar */
 header nav {
     border: solid 2px var(--electricblue);
     margin: auto;
@@ -66,7 +66,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--activatedblue);
 }
-
+/* styles for the header main content */
 #name {
     font-family: 'brush script mt', cursive;
 }
@@ -85,11 +85,11 @@ header nav ul li a:hover {
     padding:2px;
     color: var(--electricblue);
 }
-
+/* styles for the main body */
 main {
     background-color: black;
 }
-
+/* styles for the project section */
 #my-projects {
     color: var(--electricblue);
 }
@@ -126,7 +126,7 @@ main {
 #my-projects img {
     width: 300px;
 }
-
+/* styles for the featured work */
 .featured {
     display: flex;
     justify-content: center;
@@ -167,7 +167,7 @@ main {
     border-color: var(--lightpurple);
     box-shadow: 0px 0px 25px 10px var(--electricblue);
 }
-
+/* styles for the contact info */
 #contact {
     display: flex;
     flex-direction: column;
@@ -202,7 +202,7 @@ main {
     border: solid medium var(--activatedblue);
     border-radius: 2px;
 }
-
+/* adapts the page to smaller screen sizes */
 @media screen and (max-width:768px) {
     header {
         display: flex;
