@@ -15,12 +15,12 @@
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 350%;
     padding: 2% 0;
 }
 
 h2 {
-    font-size: 170%;
+    font-size: 250%;
     padding: 1% 2%;
 }
 
@@ -42,10 +42,6 @@ header {
     background-color: rgb(5, 7, 94);
 }
 
-header > * {
-    max-width: 80%;
-}
-
 header nav {
     border: solid 2px var(--electricblue);
     margin: auto;
@@ -63,6 +59,8 @@ header nav ul li {
 
 header nav ul li a {
     display: flex;
+    flex-direction: row;
+    font-size: 30px;
 }
 
 header nav ul li a:hover {
@@ -74,7 +72,7 @@ header nav ul li a:hover {
 }
 
 .headshot {
-    max-width: 40%;
+    max-width: 200px;
     border: solid 2px var(--darkpurple);
     border-radius: 15px;
     box-shadow: 0px 0px 15px 5px var(--blueglow);
@@ -98,35 +96,9 @@ main {
 
 #my-projects h2 {
     text-align: center;
-    font-size: 3em;
-    margin: 5px;
+    font-size: 4em;
+    margin: 20px;
     font-family: 'brush script mt', cursive;
-}
-
-.featured {
-    display: flex;
-    justify-content: center;
-}
-
-.featured img {
-    
-}
-
-.featured a {
-    display: flex;
-    padding: 3%;
-    margin: 15px 0 15px 0;
-    border: solid;
-    border-color: var(--darkpurple);
-    border-width: medium;
-    border-radius: 15px;
-    background-color: #000000;
-    box-shadow: 0px 0px 15px 5px var(--blueglow);
-}
-
-.featured a:hover {
-    border-color: var(--lightpurple);
-    box-shadow: 0px 0px 25px 10px var(--electricblue);
 }
 
 #my-projects ul {
@@ -153,6 +125,47 @@ main {
 
 #my-projects img {
     width: 300px;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.featured h3 {
+    border: solid 1px red;
+    margin-bottom: -50px;
+    z-index: 1;
+    background-color: #000000;
+    padding: 1em;
+    border: solid 2px var(--electricblue);
+    box-shadow: 0 0 25px 10px var(--purpleglow);
+    border-radius: 15px;
+}
+
+.featured a {
+    display: flex;
+    padding: 3%;
+    margin: 15px 0 15px 0;
+    border: solid;
+    border-color: var(--darkpurple);
+    border-width: medium;
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0px 0px 15px 5px var(--blueglow);
+}
+
+.featured a img {
+    min-width: 500px;
+}
+
+.featured a:hover {
+    border-color: var(--lightpurple);
+    box-shadow: 0px 0px 25px 10px var(--electricblue);
 }
 
 #contact {
@@ -190,3 +203,24 @@ main {
     border-radius: 2px;
 }
 
+@media screen and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 300%;
+    }
+    h2 {
+        font-size: 170%;
+    }
+    header nav ul li a {
+        font-size: 1em;
+    }
+    .featured a img {
+        min-width: 300px;
+    }
+}
